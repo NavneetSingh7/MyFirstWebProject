@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+html,
+body {
+
+    height: 100%;
+    width: 100%;
+}
+
+#cursor {
+
+    height: 20px;
+    width: 20px;
+    background-color: #95C11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+#cursor-blur {
+
+    height: 350px;
+    width: 350px;
+    background-color: #96c11ea8;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(80px);
+    z-index: 9;
+
+
+}
+
+#nav {
+    height: 150px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    justify-content: flex-start;
+    gap: 30px;
+    position: fixed;
+    z-index: 99;
+}
+
+#nav img {
+    height: 70px;
+
+}
+
+#nav h4 {
+
+    text-transform: uppercase;
+    font-weight: 100px;
+    font-size: medium;
+    font-style: normal;
+}
+
+video {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+
+}
+
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.285);
+}
+
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+
+}
+
+#page1 h1 {
+    font-size: 80px;
+    font-weight: 900;
+    position: relative;
+
+}
+
+#page1 h1::after {
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 1px #95C11E;
+    z-index: -1;
+
+}
+
+#page1 h2 {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+#page1 p {
+    font-size: 20px;
+    font-weight: 50;
+    text-align: center;
+    font-style: normal;
+
+
+}
+
+#page2 {
+
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+#scholler {
+    /* background-color: red; */
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
+    z-index: 10;
+
+}
+
+#scholler-in {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#scholler-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scholler h4 {
+    display: inline-block;
+    font-size: 90px;
+    font-weight: 2000px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 10px;
+    transition: all linear 0.2s;
+    -webkit-text-stroke: 1px white;
+    color: black;
+}
+
+#scholler h4:hover {
+    color: #95C11E;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
